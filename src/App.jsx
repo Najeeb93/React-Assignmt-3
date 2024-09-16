@@ -5,9 +5,12 @@ import './App.css'
 import UseEffect from './assets/UseEffect'
 
 function App() {
-  const [count, setCount] = useState(0)
+ 
 
   return (
+    <div className='container mx-auto'>
+<h1>Learning Material UI</h1>
+    </div>
   
   )
 }
