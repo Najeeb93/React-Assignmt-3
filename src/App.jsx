@@ -2,7 +2,8 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import UseEffect from './assets/UseEffect'
-import { Box, Typography, Button} from '@mui/material'
+import { Box, Typography, Button, TextField} from '@mui/material'
+import AccountCircleOutlinedIcon from '@mui/icons-material/AccountCircleOutlined';
 
 function App() {
  
@@ -13,8 +14,13 @@ function App() {
        bgcolor={'orange'} padding={1} color={'white'} marginTop={1} marginBottom={1} borderRadius={3}>
 <Typography variant='h5'fontWeight={'medium'} sx={{textDecoration:'underline'}}>Image Gallery</Typography>
 <Button variant='outlined'
-
+color='white'
+endIcon={<AccountCircleOutlinedIcon/>}
 >Login </Button></Box>
+<Box display={'flex'} justifyContent={'space-between'}>
+<TextField id="outlined-basic" label="Search Your Images" variant="outlined" />
+
+</Box>
     </div>
   
   )
