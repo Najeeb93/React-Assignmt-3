@@ -4,6 +4,7 @@ import viteLogo from "/vite.svg";
 import UseEffect from "./assets/UseEffect";
 import { Box, Typography, Button, TextField } from "@mui/material";
 import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
+import { SearchOutlined } from "@mui/icons-material";
 
 function App() {
   return (
@@ -32,7 +33,7 @@ function App() {
           color="white"
           endIcon={<AccountCircleOutlinedIcon />}
         >
-          Login{" "}
+          Login
         </Button>
       </Box>
       <Box display={"flex"} gap={2} justifyContent={"space-between"}>
@@ -45,9 +46,9 @@ function App() {
         <Button
           variant="outlined"
           color="primary"
-          endIcon={<AccountCircleOutlinedIcon />}
+          startIcon={<SearchOutlined />}
         >
-          Login{" "}
+          Search
         </Button>
       </Box>
     </div>
